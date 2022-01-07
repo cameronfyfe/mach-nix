@@ -83,7 +83,7 @@ class OverridesGenerator(ExpressionGenerator):
                     if ! isPyModule dep || pnamesEnv ? "${{normalizeName (get_pname dep)}}" then
                       true
                     else
-                      trace "removing dependency ${{dep.name}} from ${{pname}}" false)
+                      trace "CAMERON FORK LOGIC: retaining dependency ${{dep.name}} from ${{pname}}" true)
                   inputs;
               updatePythonDeps = newPkgs: pkg:
                 if ! isPyModule pkg then pkg else
